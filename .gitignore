@@ -117,6 +117,7 @@ InitTestScene*.unity*
 
 # Rider
 # Rider auto-generates .iml files, and contentModel.xml
+*.idea
 **/.idea/**/*.iml
 **/.idea/**/contentModel.xml
 **/.idea/**/modules.xml
