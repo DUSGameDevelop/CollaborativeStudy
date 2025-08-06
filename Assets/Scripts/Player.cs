@@ -25,7 +25,10 @@ public class Player : MonoBehaviour, IUnit
     
     public void Jump()
     {
-        Debug.Log("Jump");
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log("Jump");
+        }
     }
     
     public void Die()
@@ -38,11 +41,13 @@ public class Player : MonoBehaviour, IUnit
         Debug.Log("Damage");
     }
 
-    
     public void TestCallWon()
     {
         Debug.Log("Won");
     }
-
-
+    
+    public void ShotDdang()
+    {
+        Debug.Log("ShotDdang");
+    }
 }
