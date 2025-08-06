@@ -12,7 +12,7 @@ public class Player : MonoBehaviour, IUnit
 
     private void Update()
     {
-        
+        Jump();
     }
 
     public void Walk()
@@ -24,6 +24,10 @@ public class Player : MonoBehaviour, IUnit
     public void Jump()
     {
         Debug.Log("Jump");
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("짬뿌");
+        }
     }
     
     public void Die()
@@ -36,5 +40,9 @@ public class Player : MonoBehaviour, IUnit
         Debug.Log("Damage");
     }
 
+    public void testJun()
+    {
+        Debug.Log("테스트");
+    }
    
 }
