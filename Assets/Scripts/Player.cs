@@ -17,8 +17,9 @@ public class Player : MonoBehaviour, IUnit
 
     public void Walk()
     {
+        if(Input.GetKey(KeyCode.T))
         Debug.Log("Walk");
-        Debug.Log("ì›Œí¬");
+        Debug.Log("¿öÅ©");
     }
     
     public void Jump()
