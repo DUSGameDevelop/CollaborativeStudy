@@ -7,18 +7,20 @@ public class Player : MonoBehaviour, IUnit
 
     private void Start()
     {
-        Walk();
+        
     }
 
     private void Update()
     {
-        
+        Walk();
     }
 
     public void Walk()
     {
-        Debug.Log("Walk");
-        Debug.Log("워크");
+       if (Input.GetKeyDown(KeyCode.Escape))
+       {
+           Debug.Log("esc 누름");
+       }
     }
     
     public void Jump()
@@ -36,5 +38,11 @@ public class Player : MonoBehaviour, IUnit
         Debug.Log("Damage");
     }
 
-   
+    
+    public void TestCallWon()
+    {
+        Debug.Log("Won");
+    }
+
+
 }
