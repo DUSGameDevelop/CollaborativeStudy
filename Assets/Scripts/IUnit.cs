@@ -7,5 +7,4 @@ public interface IUnit
     void Jump();
     void Die();
     void Damage();
-
 }
