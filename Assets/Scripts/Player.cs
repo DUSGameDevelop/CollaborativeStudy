@@ -7,24 +7,28 @@ public class Player : MonoBehaviour, IUnit
 
     private void Start()
     {
-        Walk();
+        
     }
 
     private void Update()
     {
-        
+        Walk();
     }
 
     public void Walk()
     {
-        if(Input.GetKey(KeyCode.T))
-        Debug.Log("Walk");
-        Debug.Log("¿öÅ©");
+       if (Input.GetKeyDown(KeyCode.Escape))
+       {
+           Debug.Log("esc ëˆ„ë¦„");
+       }
     }
     
     public void Jump()
     {
-        Debug.Log("Jump");
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log("Jump");
+        }
     }
     
     public void Die()
@@ -37,5 +41,13 @@ public class Player : MonoBehaviour, IUnit
         Debug.Log("Damage");
     }
 
-   
+    public void TestCallWon()
+    {
+        Debug.Log("Won");
+    }
+    
+    public void ShotDdang()
+    {
+        Debug.Log("ShotDdang");
+    }
 }
